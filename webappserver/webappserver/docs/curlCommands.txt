@@ -1,0 +1,46 @@
+			     Curl Commands:
+
+Showing a greeting message to the server:
+curl -i -H "Content-Type: application/json" -X GET localhost:8080/ping
+
+Adding a food item to the server:
+curl -i -H "Content-Type: application/json" -X POST -d '{
+  "choice" : 1,
+  "name" : "foodItemName",
+  "notes" : "foodNotes",
+  "price" : 8.66,
+  "size" : 233.22,
+  "expiryDate" : "2021-10-11T00:00"
+}' localhost:8080/addFood
+
+Adding a drink item to the server:
+curl -i -H "Content-Type: application/json" -X POST -d '{
+  "choice" : 2,
+  "name" : "drinkItemName",
+  "notes" : "drinkNotes",
+  "price" : 5.38,
+  "size" : 145.65,
+  "expiryDate" : "2021-12-30T00:00"
+}' localhost:8080/addDrink
+
+Removing an item from the server by its index:
+curl -i -H "Content-Type: application/json" -X POST localhost:8080/removeItem/0
+
+Listing all items as JSON array objects on the server:
+curl -i -H "Content-Type: application/json" -X GET localhost:8080/listAll
+
+Listing all expired items sorted by expiry date (oldest to latest) 
+as JSON array objects on the server:
+curl -i -H "Content-Type: application/json" -X GET localhost:8080/listExpired
+
+Listing all non-expired items sorted by expiry date (oldest to latest) 
+as JSON array objects on the server:
+curl -i -H "Content-Type: application/json" -X GET localhost:8080/listNonExpired
+
+Listing all items expiring in 7 days or less sorted by expiry date (oldest to latest) 
+as JSON array objects on the server:
+curl -i -H "Content-Type: application/json" -X GET localhost:8080/listExpiringIn7Days
+
+Exiting the server and triggering the server to save current 
+items into a JSON file:
+curl -i -H "Content-Type: application/json" -X GET localhost:8080/exit
