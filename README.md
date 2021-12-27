@@ -46,6 +46,10 @@ https://github.com/Ajaipaul-Cheema/products_tracker.git
 <!-- USAGE EXAMPLES -->
 ## Usage
 ![emptyGUI](https://user-images.githubusercontent.com/96704215/147435922-2c23be8c-546c-4c48-8d3a-40aa7b09fd9a.jpg)
+![allItems](https://user-images.githubusercontent.com/96704215/147455155-2742de2b-e78f-43e8-b16b-2b5ee07605aa.jpg)
+![remove](https://user-images.githubusercontent.com/96704215/147455171-8db722a5-8637-4c68-80ea-4cf7e9a32319.jpg)
+![afterRemoval](https://user-images.githubusercontent.com/96704215/147455188-22d82483-b690-42e1-9cd5-02976c78638d.jpg)
+![saving](https://user-images.githubusercontent.com/96704215/147455199-f823b025-ecde-4eed-943a-960e686878ba.jpg)
 
 <!-- CONTACT -->
 ## Contact
